@@ -1,0 +1,15 @@
+#install library yang dibutuhkan
+install.packages("tm") #for text mining
+install.packages("SnowballC")
+install.packages("wordcloud")
+install.packages("RColorBrewer")
+
+#load library
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+setwd("D:/MyData/Semester 6/Big Data/uas/uas/") #setting direktori file sumber
+getwd()
+
+text <- readLines("D:/MyData/Semester 6/Big Data/uas/uas/hasil_crawler.txt")
